@@ -230,20 +230,16 @@ class while_prac4 {
 class for_prac {
     public static void main(String[] args) {
         int total = 0;
-        System.out.println("Total = " + total + ", input the money: ");
+        System.out.println("Total =" + total + " " +"input the money: ");
         Scanner sc = new Scanner(System.in);
         int money = sc.nextInt();
         total = total + money;
-        int choice = 0;
         while (true){
             if (total < 500) {
-                while (total >= 500) {
-                    System.out.println("Total =" + total + "input the money: ");
-                    money = sc.nextInt();
-                    total = total + money;
-                }
+                System.out.println("Total =" + total + "input the money: ");
+                money = sc.nextInt();
+                total = total + money;
             } else {
-                while (total < 500) {
                 System.out.println("Total = " + total);
                 System.out.println("=====================");
                 System.out.println("M E N U");
@@ -251,7 +247,8 @@ class for_prac {
                 System.out.println("1. coke \n2. cydar \n3. coffee \n4. quit");
                 System.out.println("=====================");
                 System.out.println("select a num: ");
-                choice = sc.nextInt();
+                Scanner sc2 = new Scanner(System.in);
+                int choice = sc.nextInt();
 
                 if (choice == 1) {
                     System.out.println("coke is served");
@@ -273,7 +270,7 @@ class for_prac {
             }
         }
     };  
-}
+
 
 
 
